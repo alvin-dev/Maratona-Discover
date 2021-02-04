@@ -122,9 +122,8 @@ const DOM = {
 const Utils = {
     //faz o retorno de um valor formatado
     formatAmount(value) {
-        value = Number(value) * 100
-        
-        return value
+        value = value * 100
+        return Math.round(value)
     },
 
     formatDate(date) {
