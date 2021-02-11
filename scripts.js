@@ -71,7 +71,6 @@ const Transaction = {
 }
 
 const DOM = {
-    // nao entendi esse dois pontos depois do transactionsContainer ------
     transactionsContainer: document.querySelector('#data-table tbody'), 
 
     addTransaction(transaction, index) {
@@ -234,7 +233,17 @@ const App = {
     },
 }
 
+const darkMode = {
+    toggleStyle() {
+        styleCSS = document.getElementsByTagName('link')[0]
+        if (styleCSS.getAttribute('href') == 'style.css') {
+            styleCSS.setAttribute('href', 'style-dark.css')
+        } else {
+            styleCSS.setAttribute('href', 'style.css')
+        }
+    }
 
+}
 
 App.init()
 
