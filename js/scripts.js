@@ -235,11 +235,11 @@ const App = {
 
 const darkMode = {
     toggleStyle() {
-        styleCSS = document.getElementsByTagName('link')[0]
-        if (styleCSS.getAttribute('href') == 'style.css') {
-            styleCSS.setAttribute('href', 'style-dark.css')
+        styleCSS = document.querySelector('link#styles')
+        if (styleCSS.getAttribute('href') == 'css/style.css') {
+            styleCSS.setAttribute('href', 'css/style-dark.css')
         } else {
-            styleCSS.setAttribute('href', 'style.css')
+            styleCSS.setAttribute('href', 'css/style.css')
         }
     }
 
