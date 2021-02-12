@@ -338,9 +338,19 @@ footer{
     text-align: center;
     padding: 4rem 0 2rem;
     color: var(--dark-blue);
-
     opacity: 0.6;
 }
+footer section{
+    display: flex;
+    justify-content: center;
+}
+.social-media i{
+    font-size: large;
+}
+.social-media a{
+    padding: 0 0.5rem;
+}
+
 
 
 /* Responsive ==================== */
